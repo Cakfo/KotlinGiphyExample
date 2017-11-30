@@ -15,8 +15,7 @@ interface GiphyAPI {
     @GET("/v1/gifs/search")
     fun getGifs(@Query("api_key") apiKey: String, @Query("q") query: String): Call<ApiResponse>
 
-    companion object Factory {
-
+    companion object {
         fun create(): GiphyAPI {
             val retrofit = Retrofit.Builder()
                     .baseUrl("http://api.giphy.com/")

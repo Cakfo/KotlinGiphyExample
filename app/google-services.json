@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "392760430482",
+    "project_id": "firebase-kotlin-example"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392760430482:android:3c0e86b18b29d0a2",
+        "android_client_info": {
+          "package_name": "com.spaja.kotlinexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392760430482-ok8kh4pg3pqkqgcavm82ct62a7g2mr5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spaja.kotlinexample",
+            "certificate_hash": "f340f197017b90f50b87b7c485bb7b2a3655e30f"
+          }
+        },
+        {
+          "client_id": "392760430482-ilj46pdes8uafh931e0tlph7gl9n1p09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPCZroeMoqt6saGEe7yFUmvuWtzEo3NqY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
