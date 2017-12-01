@@ -11,9 +11,9 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.SignInButton
 import com.spaja.kotlinexample.model.ApiResponse
 import com.spaja.kotlinexample.networking.GiphyAPI
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val input: EditText = findViewById(R.id.input)
         initializeRecyclerView()
 
         val gso: GoogleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -36,7 +35,6 @@ class MainActivity : AppCompatActivity() {
                 .build()
 
         val client = GoogleSignIn.getClient(this, gso)
-        val signIn: SignInButton = findViewById(R.id.sign_in_button)
 
         signIn.setOnClickListener {
             val i: Intent = client.signInIntent
